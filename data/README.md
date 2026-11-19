@@ -8,10 +8,10 @@ logs.
 
 The preparation code expects the published BANKING77 CSV shape:
 
-| Column | Meaning |
-| --- | --- |
-| `text` | User utterance used as the classifier input |
-| `category` | One of the 77 intent labels |
+| Column     | Meaning                                     |
+| ---------- | ------------------------------------------- |
+| `text`     | User utterance used as the classifier input |
+| `category` | One of the 77 intent labels                 |
 
 Source: [PolyAI task-specific datasets](https://github.com/PolyAI-LDN/task-specific-datasets/tree/master/banking_data).
 Record the exact source commit or dataset snapshot, source checksums, and the

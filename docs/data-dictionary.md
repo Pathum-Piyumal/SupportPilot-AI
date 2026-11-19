@@ -5,10 +5,10 @@
 The offline preparation pipeline reads two published CSV files. Both files
 must contain the following columns and UTF-8 text:
 
-| Column | Type | Constraints |
-| --- | --- | --- |
-| `text` | string | Non-blank user utterance; used as the only classifier feature |
-| `category` | string | Non-blank intent label; 77 labels for BANKING77 |
+| Column     | Type   | Constraints                                                   |
+| ---------- | ------ | ------------------------------------------------------------- |
+| `text`     | string | Non-blank user utterance; used as the only classifier feature |
+| `category` | string | Non-blank intent label; 77 labels for BANKING77               |
 
 The source audit records row counts, unique texts, duplicate rows, conflicting
 duplicate labels, blank values, label distribution, and text-length summary.
@@ -18,10 +18,10 @@ The stable label map is alphabetical and is stored in the generated manifest.
 
 Each generated JSONL record contains:
 
-| Field | Type | Meaning |
-| --- | --- | --- |
-| `text` | string | Original utterance |
-| `label` | string | Original `category` value |
+| Field      | Type    | Meaning                               |
+| ---------- | ------- | ------------------------------------- |
+| `text`     | string  | Original utterance                    |
+| `label`    | string  | Original `category` value             |
 | `label_id` | integer | Stable ID from the manifest label map |
 
 `train.jsonl` and `validation.jsonl` are created only from the published
