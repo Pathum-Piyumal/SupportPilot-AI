@@ -1,0 +1,9 @@
+node_modules
+dist
+.venv
+.npm-cache
+.uv-cache
+package-lock.json
+uv.lock
+MASTERPLAN*.md
+project proposal.md.txt
